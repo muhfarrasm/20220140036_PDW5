@@ -1,0 +1,108 @@
+body {
+    background-image: url('Hero/land\ of\ down.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    
+}
+
+#judul {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 20pt;
+    background-color: #41038d;
+}
+
+
+table {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #f0f0f0; 
+    
+}
+
+#jdl {
+    color: rgb(202, 21, 8);
+    text-align: center;
+}
+
+#member {
+    width: 100px;
+    display: inline-block;
+}
+
+#mnama, #mposisi, #mrole, #msub {
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.left-div {
+    width: 100px;
+    display: inline-block;
+}
+
+.right-div {
+    display: inline-block;
+}
+
+#toggleButton {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+#toggleButton:hover {
+    background-color: #45a049;
+}
+
+#toggleButton:active {
+    background-color: #4CAF50; 
+    transform: translateY(2px); 
+}
+
+
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+img {
+    animation-duration: 0.5s; 
+    animation-fill-mode: both; 
+}
+
+
+img:hover {
+    animation-name: zoomIn;
+}
+
+
+img:not(:hover) {
+    animation-name: zoomOut;
+}
